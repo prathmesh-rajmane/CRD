@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Local generation
-LOCAL_MANIFEST_FILE=/home/amrut/projects/kubernetes-custom-resource/crd/my-crd.yaml
+LOCAL_MANIFEST_FILE=/home/prathmesh/Capability/kubernetes-custom-resource/crd/my-crd.yaml
 mkdir -p /tmp/java && cd /tmp/java
 docker run \
   --rm \
@@ -13,6 +13,6 @@ docker run \
   ghcr.io/kubernetes-client/java/crd-model-gen:v1.0.6 \
   /generate.sh \
   -u $LOCAL_MANIFEST_FILE \
-  -n prabhu.amrut.com \
-  -p com.amrut.prabhu \
+  -n capability.devops.com \
+  -p com.devops.capability \
   -o "$(pwd)"
